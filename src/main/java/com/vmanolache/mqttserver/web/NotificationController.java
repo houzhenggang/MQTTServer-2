@@ -35,12 +35,7 @@ public class NotificationController {
 		if(bindingResult.hasErrors()) {
 			return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
 		}
-		
-		/**
-		 * FIXME
-		 * 
-		 * Use dozer here for binding new object! See http://dozer.sourceforge.net/
-		 */
+		 
 		Notification notification = new Notification();
 		notification.setSubject(form.getSubject());
 		notification.setContent(form.getContent());
