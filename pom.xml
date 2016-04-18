@@ -4,6 +4,7 @@
 	<groupId>com.vmanolache.mqttserver</groupId>
 	<artifactId>mqtt-notif-application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+        <packaging>war</packaging>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -145,7 +146,8 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> 
+                        
 		</plugins>
 	</build>
     <name>mqttServer</name>
